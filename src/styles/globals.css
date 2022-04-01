@@ -9,18 +9,18 @@ body,
 }
 
 :root {
-  --color-primary: 243;
-  --color-secondary: 277;
-  --color-accent: 311;
+  --color-primary: 233;
+  --color-secondary: 203;
+  --color-accent: 173;
 }
 
 html.dark {
   color-scheme: dark;
-  --color-primary: 332;
-  --color-secondary: 302;
-  --color-accent: 272;
+  --color-primary: 13;
+  --color-secondary: 43;
+  --color-accent: 73;
 }
 
 body {
-  @apply transition-colors bg-white dark:bg-black;
+  @apply transition-colors bg-white dark:bg-gray-900;
 }

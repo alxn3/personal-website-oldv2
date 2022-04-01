@@ -42,17 +42,17 @@ module.exports = {
     extend: {
       colors: {
         primary: generateSwatch('--color-primary', {
-          hueShift: [-10, 10],
+          hueShift: [10, -10],
           saturation: [40, 90],
           luminiosity: [10, 90],
         }),
         secondary: generateSwatch('--color-secondary', {
-          hueShift: [-10, 20],
+          hueShift: [10, -20],
           saturation: [40, 90],
           luminiosity: [10, 90],
         }),
         accent: generateSwatch('--color-accent', {
-          hueShift: [-10, 30],
+          hueShift: [10, -30],
           saturation: [40, 90],
           luminiosity: [10, 90],
         }),
