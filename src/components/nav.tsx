@@ -54,7 +54,7 @@ const Nav = () => {
           <div className="flex-row items-center hidden space-x-4 font-semibold sm:flex">
             {links.map((link) => (
               <Link href={link.url} key={link.url}>
-                <a className="text-gray-700 transition-colors dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-500">
+                <a className="text-gray-700 transition-colors dark:text-gray-300 hover:text-primary-400 dark:hover:text-primary-400">
                   {link.name}
                 </a>
               </Link>
