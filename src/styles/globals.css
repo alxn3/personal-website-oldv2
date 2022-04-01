@@ -13,18 +13,18 @@ html {
 }
 
 :root {
-  --color-primary: 233;
-  --color-secondary: 203;
-  --color-accent: 173;
+  --color-primary: 243;
+  --color-secondary: 213;
+  --color-accent: 37;
 }
 
 html.dark {
   color-scheme: dark;
-  --color-primary: 357;
-  --color-secondary: 27;
-  --color-accent: 47;
+  --color-primary: 37;
+  --color-secondary: 17;
+  --color-accent: 227;
 }
 
 body {
-  @apply transition-colors bg-white dark:bg-gray-900;
+  @apply transition-colors bg-white dark:bg-gray-900 text-slate-800/80 dark:text-slate-200/80;
 }
