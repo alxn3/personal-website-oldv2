@@ -14,10 +14,8 @@ const BaseLayout = ({ children }: Props) => {
         <meta name="description" content="Alex's Website!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="h-full w-[min(90%,78rem)] mx-auto">
-        <Nav />
-        {children}
-      </main>
+      <Nav />
+      <main className="h-full w-[min(90%,78rem)] mx-auto">{children}</main>
     </>
   );
 };

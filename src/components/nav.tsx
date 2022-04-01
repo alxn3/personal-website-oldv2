@@ -42,8 +42,8 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full">
-      <div className=" flex flex-row flex-wrap items-center justify-between w-[min(90%,78rem)] mx-auto p-3 bg-white dark:bg-slate-900 transition-colors">
+    <nav className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 transition-colors">
+      <div className=" flex flex-row flex-wrap items-center justify-between w-[min(90%,78rem)] mx-auto p-3 ">
         <Link href="/">
           <a className="p-2">
             <span className="text-2xl font-bold tracking-wide text-black dark:text-white">
