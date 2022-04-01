@@ -16,9 +16,9 @@ body,
 
 html.dark {
   color-scheme: dark;
-  --color-primary: 13;
-  --color-secondary: 43;
-  --color-accent: 73;
+  --color-primary: 357;
+  --color-secondary: 27;
+  --color-accent: 47;
 }
 
 body {
