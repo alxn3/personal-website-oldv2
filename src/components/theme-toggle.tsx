@@ -2,7 +2,11 @@ import { useEffect } from 'react';
 import { RiMoonFill, RiMoonLine, RiSunFill, RiSunLine } from 'react-icons/ri';
 import { useTheme } from 'next-themes';
 
-const ThemeToggle = () => {
+type Props = {
+  className?: string;
+};
+
+const ThemeToggle = ({ className }: Props) => {
   const { theme, resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => {
@@ -15,6 +19,7 @@ const ThemeToggle = () => {
 
   return (
     <button
+      className={className}
       onClick={() =>
         setTheme(
           theme === 'dark' || (theme === 'system' && resolvedTheme === 'dark')
@@ -23,13 +28,13 @@ const ThemeToggle = () => {
         )
       }
     >
-      <div className="absolute opacity-0 hover:opacity-100 transition-opacity">
-        <RiSunFill className="block dark:hidden" />
-        <RiMoonFill className="hidden dark:block" />
+      <div className="absolute">
+        <RiSunLine className="absolute transition-opacity opacity-100 dark:opacity-0" />
+        <RiMoonLine className="transition-opacity opacity-0 dark:opacity-100" />
       </div>
-      <div>
-        <RiSunLine className="block dark:hidden" />
-        <RiMoonLine className="hidden dark:block" />
+      <div className="transition-opacity opacity-0 hover:opacity-100">
+        <RiSunFill className="absolute transition-opacity opacity-100 dark:opacity-0" />
+        <RiMoonFill className="transition-opacity opacity-0 dark:opacity-100" />
       </div>
     </button>
   );

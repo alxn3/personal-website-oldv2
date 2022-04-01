@@ -3,11 +3,10 @@ import Head from 'next/head';
 import { ReactNode } from 'react';
 
 type Props = {
-  hero?: ReactNode;
   children?: ReactNode;
 };
 
-const BaseLayout = ({ hero, children }: Props) => {
+const BaseLayout = ({ children }: Props) => {
   return (
     <>
       <Head>
@@ -16,14 +15,7 @@ const BaseLayout = ({ hero, children }: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="h-full w-[min(90%,78rem)] mx-auto">
-        {hero ? (
-          <div className="grid grid-rows-[auto,1fr] h-auto min-h-full">
-            <Nav />
-            <div>{hero}</div>
-          </div>
-        ) : (
-          <Nav />
-        )}
+        <Nav />
         {children}
       </main>
     </>

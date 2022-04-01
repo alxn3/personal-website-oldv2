@@ -3,7 +3,8 @@ import BaseLayout from 'layouts/base-layout';
 
 const Home = () => {
   return (
-    <BaseLayout hero={<Hero />}>
+    <BaseLayout>
+      <Hero />
       <div className="flex flex-col h-full">
         <div className="grid h-full grid-cols-3">
           <div className="flex flex-col w-full h-full">

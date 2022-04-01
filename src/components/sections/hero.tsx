@@ -23,7 +23,7 @@ const Hero = () => {
             corrupti repellat sit adipisci dignissimos non eveniet.
           </p>
         </div>
-        <OutlineButton className="block leading-normal text-[0.25em] border-primary-600 bg-primary-300/10 text-primary-600 hover:text-primary-50 hover:bg-primary-700">
+        <OutlineButton className="block leading-normal text-[0.25em] border-primary-500 bg-primary-300/10 text-primary-500 hover:text-primary-50 hover:bg-primary-700">
           <Link href="/">Learn more.</Link>
         </OutlineButton>
       </div>
