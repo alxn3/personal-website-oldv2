@@ -29,8 +29,9 @@ const Nav = () => {
   const menuButton = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
+    const breakpoint = getBreakpointValue('md');
     const handleResize = () => {
-      if (window.innerWidth > getBreakpointValue('md')) {
+      if (window.innerWidth > breakpoint) {
         setIsOpen(false);
       }
     };
