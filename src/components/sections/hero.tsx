@@ -9,9 +9,9 @@ const Hero = () => {
           <p className="text-[0.3em] font-bold text-accent-300">
             Hello there.
           </p>
-          <h1 className="font-semibold text-primary-200 dark:text-primary-700">
+          <h1 className="font-semibold text-primary-200 dark:text-primary-600">
             I&apos;m{' '}
-            <span className="font-bold text-primary-800 dark:text-primary-200">
+            <span className="font-bold text-primary-800 dark:text-primary-100">
               Alex Lin
             </span>
           </h1>

@@ -46,7 +46,7 @@ const Nav = () => {
       <div className=" flex flex-row flex-wrap items-center justify-between w-[min(90%,78rem)] mx-auto p-3 ">
         <Link href="/">
           <a className="p-2">
-            <span className="text-2xl font-bold tracking-wide text-black dark:text-white">
+            <span className="text-2xl font-bold tracking-wide">
               Alex Lin
             </span>
           </a>
@@ -55,7 +55,7 @@ const Nav = () => {
           <div className="flex-row items-center hidden space-x-4 font-semibold sm:flex">
             {links.map((link) => (
               <Link href={link.url} key={link.url}>
-                <a className="text-gray-700 transition-colors dark:text-gray-300 hover:text-primary-400 dark:hover:text-primary-400">
+                <a className="text-gray-700 transition-colors dark:text-gray-300 hover:text-primary-300 dark:hover:text-primary-500">
                   {link.name}
                 </a>
               </Link>

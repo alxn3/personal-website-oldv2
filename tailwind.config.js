@@ -52,7 +52,7 @@ module.exports = {
           luminiosity: [10, 90],
         }),
         accent: generateSwatch('--color-accent', {
-          hueShift: [20, -20],
+          hueShift: [-20, 20],
           saturation: [40, 90],
           luminiosity: [10, 90],
         }),
