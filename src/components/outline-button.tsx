@@ -9,7 +9,7 @@ type Props = {
 const OutlineButton = ({ className, onClick, children }: Props) => {
   return (
     <button
-      className={`border-4 rounded-xl border-slate-700 text-slate-700 px-3 py-1 hover:bg-slate-700 hover:text-slate-200 transition-colors ${
+      className={`border-4 rounded-xl px-3 py-1 border-primary-500 bg-primary-300/20 text-primary-500 hover:text-primary-50 hover:bg-primary-500/90 transition-colors ${
         className || ''
       }`}
       onClick={onClick}
