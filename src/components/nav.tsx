@@ -30,7 +30,6 @@ const menuTextStyles =
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const menuButton = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const breakpoint = getBreakpointValue('md');
@@ -62,7 +61,14 @@ const Nav = () => {
             ))}
           </div>
           <div
-            className={`h-full fixed top-0 right-0 flex flex-col bg-primary-500  transition-transform ease-in-out duration-300 w-[min(24rem,100%)] ${
+            className={`w-full h-full fixed top-0 right-0 backdrop-blur-sm transition-all duration-500 ${
+              isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+            }`}
+            onClick={() => setIsOpen(false)}
+            onMouseEnter={() => setIsOpen(false)}
+          />
+          <div
+            className={`h-full fixed top-0 right-0 flex flex-col bg-primary-500 transition-transform ease-in-out duration-300 w-[max(calc(4em+50%-min(90%,var(--max-content-width))/2),min(25rem,100%))] ${
               isOpen ? 'translate-x-0' : 'translate-x-[100%]'
             }`}
           >
@@ -81,9 +87,9 @@ const Nav = () => {
           <div className="z-10 flex flex-row space-x-2 text-xl">
             <ThemeToggle className={isOpen ? menuTextStyles : linkTextStyles} />
             <button
-              className={`md:hidden ${isOpen ? menuTextStyles : linkTextStyles}`}
+              className={` ${isOpen ? menuTextStyles : linkTextStyles}`}
               onClick={() => setIsOpen(!isOpen)}
-              ref={menuButton}
+              onMouseEnter={() => setIsOpen(true)}
             >
               <RiMenu4Fill />
             </button>

@@ -16,6 +16,7 @@ html {
   --color-primary: 243;
   --color-secondary: 213;
   --color-accent: 37;
+  --max-content-width: 78rem;
 }
 
 html.dark {
