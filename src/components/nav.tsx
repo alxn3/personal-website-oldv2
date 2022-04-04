@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { RiMenu4Fill } from 'react-icons/ri';
-import { getBreakpointValue } from 'utils/tailwind';
 import Socials from './socials';
 import ThemeToggle from './theme-toggle';
 
@@ -30,19 +29,6 @@ const menuTextStyles =
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const breakpoint = getBreakpointValue('md');
-    const handleResize = () => {
-      if (window.innerWidth > breakpoint) {
-        setIsOpen(false);
-      }
-    };
-    window.onresize = handleResize;
-    return () => {
-      window.onresize = null;
-    };
-  }, []);
 
   return (
     <nav className="fixed top-0 left-0 w-full transition-colors bg-white dark:bg-gray-900">
