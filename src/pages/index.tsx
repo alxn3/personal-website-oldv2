@@ -1,4 +1,4 @@
-import { About, Hero, Work } from 'components/sections';
+import { About, Contact, Hero, Projects, Work } from 'components/sections';
 import BaseLayout from 'layouts/base-layout';
 
 const Home = () => {
@@ -7,6 +7,8 @@ const Home = () => {
       <Hero />
       <About />
       <Work />
+      <Projects />
+      <Contact />
       <div className="flex flex-col h-full">
         <div className="grid h-full grid-cols-3">
           <div className="flex flex-col w-full h-full">
