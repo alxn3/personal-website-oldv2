@@ -3,7 +3,7 @@ import Section from 'layouts/section';
 
 const About = () => {
   return (
-    <Section header="About Me">
+    <Section id="about" header="About Me">
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
         sequi unde quidem quasi praesentium, eaque animi repudiandae nam modi
